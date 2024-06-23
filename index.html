@@ -12,17 +12,91 @@
     </header>
 
     <main>
-        <h1>Survey Form</h1>
         <div id="form-container">
+            <h1>Survey Form</h1>
             <p>
                 Feel free to answer the Questions below based on your Experience and Opinion. If you are not convinced in answering a particular question please skip it by asnwering "No". Every answer would be very appreciated. Thank you for your time.
             </p>
-            <form action="">
-                <label for="name">Your Name</label><br>
-                <input name="name" type="text" placeholder="Enter Your Name">
-                <br>
-                <label for="mail">Your Email Address</label><br>
-                <input type="email" name="mail" placeholder="user@abc.com">
+            <form method="post">
+
+                <div id="flex-container">
+                    <div id="flex-item-1" class="flex-items">
+                        <div>
+                            <label for="nam">Your Name</label><br>
+                            <input type="text" name="name" id="nam" placeholder="Enter Your Name">
+                        </div>
+                        
+                        <div>
+                            <label for="maile">Your Email Address</label><br>
+                            <input type="email" name="mail" id="maile" placeholder="user@abc.com">
+                        </div>
+        
+                        <div>
+                            <label for="phoneNum">Your Phone Number</label><br>
+                            <input type="number" name="phone" id="phoneNum">
+                        </div>
+        
+                        <div>
+                            <label for="loc">Where Do You Live?</label><br>
+                            <select name="area" id="loc">
+                                <option value="">None</option>
+                                <option value="delhi">Delhi</option>
+                                <option value="mum">Mumbai</option>
+                                <option value="bag">Bangaluru</option>
+                                <option value="luck">Lucknow</option>
+                                <option value="chen">Chennai</option>
+                            </select>
+                        </div>
+
+                        <div id="age">
+                            <label for="age">Age</label><br>
+                            <input type="radio" name="age" id="age">15-20
+                            <input type="radio" name="age" id="age">20-30
+                            <input type="radio" name="age" id="age">31-40
+                            <input type="radio" name="age" id="age">41-50
+                            <input type="radio" name="age" id="age">Prefer not to say
+                        </div>
+
+                        <div>
+                            <label for="prof">How would you rate your proficiency in coding</label><br>
+                            <input type="radio" name="prof" id="prof">Beginner
+                            <br>
+                            <input type="radio" name="prof" id="prof">Intermediate
+                            <br>
+                            <input type="radio" name="prof" id="prof">Advance
+                        </div>
+
+                    </div>
+
+                    <div id="flex-item-2" class="flex-items">
+
+                        <div>
+                            <label for="coding">Have you ever Appeared in any coding contest?</label><br>
+                            <input type="radio" name="coding" id="coding">Yes
+                            <br>
+                            <input type="radio" name="coding" id="coding">No
+                        </div>
+
+                        <div>
+                            <label for="aspiration">Discuss what drives your passion for coding and outline your aspirations in the field.</label><br>
+                            <textarea name="passion" id="aspiration" rows="4" cols="52"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="chalenge">What area some of the challenges you face while coding?</label><br>
+                            <textarea name="chalenge" id="chalenge" rows="4" cols="52"></textarea>
+                        </div>
+
+                        <div>
+                            <label for="ds">Please list the Data Structure you have a strong understanding of.</label><br>
+                            <textarea name="ds" id="ds" rows="4" cols="52"></textarea>
+                        </div>
+
+                        <button>Submit Form</button>
+
+                    </div>
+                </div>
+                
             </form>
         </div>
     </main>
