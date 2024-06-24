@@ -23,17 +23,17 @@
                     <div id="flex-item-1" class="flex-items">
                         <div>
                             <label for="nam">Your Name</label><br>
-                            <input type="text" name="name" id="nam" placeholder="Enter Your Name">
+                            <input type="text" name="name" id="nam" class="free-form-text" placeholder="Enter Your Name">
                         </div>
                         
                         <div>
                             <label for="maile">Your Email Address</label><br>
-                            <input type="email" name="mail" id="maile" placeholder="user@abc.com">
+                            <input type="email" name="mail" id="maile" class="free-form-text" placeholder="user@abc.com">
                         </div>
         
                         <div>
                             <label for="phoneNum">Your Phone Number</label><br>
-                            <input type="number" name="phone" id="phoneNum">
+                            <input type="number" name="phone" id="phoneNum" class="free-form-text">
                         </div>
         
                         <div>
@@ -50,11 +50,20 @@
 
                         <div id="age">
                             <label for="age">Age</label><br>
-                            <input type="radio" name="age" id="age">15-20
-                            <input type="radio" name="age" id="age">20-30
-                            <input type="radio" name="age" id="age">31-40
-                            <input type="radio" name="age" id="age">41-50
-                            <input type="radio" name="age" id="age">Prefer not to say
+                            <div id="age-flex">
+                                <div>
+                                    <input type="radio" name="age" id="age">15-20
+                                    <br>
+                                    <input type="radio" name="age" id="age">20-30
+                                    <br>
+                                    <input type="radio" name="age" id="age">31-40
+                                </div>
+                                <div>
+                                    <input type="radio" name="age" id="age">41-50
+                                    <br>
+                                    <input type="radio" name="age" id="age">Prefer not to say
+                                </div>
+                            </div>
                         </div>
 
                         <div>

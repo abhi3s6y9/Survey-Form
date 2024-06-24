@@ -30,6 +30,11 @@ main h1 {
     font-weight: bold;
 }
 
+.free-form-text {
+    width: 60%;
+    height: 20px;
+}
+
 #form-container form #flex-container {
     padding: 10px;
     width: 100%;
@@ -47,6 +52,8 @@ main h1 {
     width: 550px;
 }
 
+/* Styling for Age field */
+
 #age {
     border: 1px solid black;
 }
@@ -58,6 +65,20 @@ main h1 {
     background: white;
 }
 
+#age-flex {
+    width: 90%;
+    display: flex;
+    margin-top: 0;
+}
+
+#age-flex div {
+    margin-right: 30px;
+    margin-left: 10px;
+}
+
+
+/* Styling for Submit button */
+
 button {
     width: 100%;
     height: 30px;
@@ -65,4 +86,9 @@ button {
     color: white;
     border-radius: 3px;
     border-width: 0;
+    margin: 10px 0;
+}
+
+button:hover {
+    cursor: pointer;
 }
