@@ -64,7 +64,7 @@ main h1 {
     width: 65%;
 }
 
-#age label {
+#age-div label {
     position: relative;
     top: -10px;
     left: 10px;
